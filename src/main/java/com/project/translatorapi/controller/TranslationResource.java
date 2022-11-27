@@ -30,7 +30,7 @@ public class TranslationResource {
 
     String url = "https://translation.googleapis.com/language/translate/v2";
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://localhost:3000/")
     @PostMapping("/")
     public TranslationsListResponse getTranslation(@RequestBody String text) throws GeneralSecurityException, IOException {
         Translate t = new Translate.Builder(
