@@ -40,7 +40,7 @@ public class TranslationResource {
                 .build();
 
         Translate.Translations.List list = t.new Translations().list(
-                List.of(
+                Arrays.asList(
                         // Pass in list of strings to be translated
                         text),
                 // Target language
